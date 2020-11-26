@@ -4,27 +4,36 @@ html, body {
     background-image: url('images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center right;
-    color: white;
-    font-family: 'Rock Salt', cursive;
+    background-position: center;
+    color: black;
+    /* font-family: 'Rock Salt', cursive; */
+    font-family: 'Bad Script', cursive;
 
   }
 
+h3 {
+  font-size: 2rem;
+}  
+
+p {
+  font-size: 1.25rem;
+}
+
 p a {
-  color: white
+  color: black
 }
 
 a:hover,
 a:active,
 a:visited,
 a:focus {
-  color: white;
+  color: black;
   /* text-decoration: none; */
 }
 
 .header {
   text-align: center;
-  margin-top: 100px;
+  padding-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -34,31 +43,34 @@ a:focus {
 
 @media (max-width: 768px) {
 .header {
-    margin-top: 50px;
+    padding-top: 50px;
+  }
+  body {
+    background-image: url('images/background-mobile');
   }
 }
 
 @media (max-width: 576px) {
 .header {
-    margin-top: 25px;
+    /* padding-top: 25px; */
     margin-bottom: 25px;
   }
 h3 {
-    font-size: 1rem
+    font-size: 1.5rem
   }
 p {
-    font-size: .5rem
+    font-size: 1rem
   }
 }
 
 @media (max-width: 320px) {
   .header {
-    margin-top: 15px;
+    /* padding-top: 15px; */
     margin-bottom: 15px;
   }
-  h3 {
+  /* h3 {
     font-size: .75rem
-  }
+  } */
   p {
     line-height: 1;
     }
